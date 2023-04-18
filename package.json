@@ -1,7 +1,7 @@
 {
   "name": "react-rk-template",
   "version": "1.0.0",
-  "description": "A example project to use React/Babel/Typescript/ReactRouter/ReactLazy",
+  "description": "A example project to use React/Babel/Typescript/ReactRouter/ReactLazy/Redux/ReduxThunk/ReduxPromisse/ReduxThunk",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
@@ -11,8 +11,14 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
     "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
     "babel-loader": "^9.1.2",
+    "core-js": "^3.30.1",
+    "regenerator-runtime": "^0.13.11",
     "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.3"
