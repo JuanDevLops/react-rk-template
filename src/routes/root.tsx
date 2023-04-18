@@ -32,16 +32,22 @@ export default function Root() {
           <nav>
             <ul>
             <li>
-              <Link to={`contacts/1`}>Your Name</Link>
+              <Link to={`ViewPrimary/1`}>View With Param id=1</Link>
             </li>
             <li>
-              <Link to={`contacts/2`}>Your Friend</Link>
+              <Link to={`ViewPrimary/2`}>View With Param id=1</Link>
             </li>
             <li>
-              <Link to={`contacts/1?test=A`}>Again</Link>
+              <Link to={`ViewPrimary/1?test=A`}>View With Param id=1 and test=A</Link>
             </li>
             <li>
-              <Link to={`contacts/2?test=B`}>Again</Link>
+              <Link to={`ViewPrimary/2?test=B`}>View With Param id=2 and test=B</Link>
+            </li>
+            <li>
+              <Link to={`Lazy/1?test=A`}>View Lazy With Param id=1 and test=A</Link>
+            </li>
+            <li>
+              <Link to={`Lazy/2?test=B`}>View Lazy With Param id=2 and test=B</Link>
             </li>
             </ul>
           </nav>

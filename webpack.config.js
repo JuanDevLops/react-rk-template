@@ -7,11 +7,15 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js",
+    publicPath: "/",
+    chunkFilename: "[name].chunk.js",
   },
   devServer: {
     static: {
       directory: path.resolve(__dirname, "./dist"),
     },
+
+    historyApiFallback: true,
   },
   module: {
     rules: [

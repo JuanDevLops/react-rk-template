@@ -1,7 +1,7 @@
 {
   "name": "react-rk-template",
   "version": "1.0.0",
-  "description": "A example project to use React/Babel/Typescript/Sass/ReactRouter/ReactLazy/Redux/ReduxThunk/ReduxPromisse/ReduxThunk",
+  "description": "A example project to use React/Babel/Typescript/Sass/ReactRouter/LazyLoading/Redux/ReduxThunk/ReduxPromisse/ReduxMulti",
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development",

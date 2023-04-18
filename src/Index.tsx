@@ -5,9 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./Index.scss";
-import Root from "./routes/root";
+import Root from "./routes/Root";
 import ErrorPage from "./error-page";
-import Contact from "./routes/contact";
+
+import AsyncComponent from "./components/AsyncComponent";
+import ViewPrimary from "./routes/ViewPrimary";
+const lazy = () => import(/* webpackChunkName: "lazy" */ './routes/ViewLazy');
+
 
 const router = createBrowserRouter([
     {
@@ -16,9 +20,13 @@ const router = createBrowserRouter([
       errorElement: <ErrorPage />,
       children: [
         {
-          path: "contacts/:contactId",
-          element: <Contact />,
+          path: "ViewPrimary/:Id",
+          element: <ViewPrimary />,
         },
+        {
+            path: "Lazy/:Id",
+            element: <AsyncComponent moduleProvider={lazy} />,
+          },
       ],
     },
   ]);
