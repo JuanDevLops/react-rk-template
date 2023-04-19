@@ -32,6 +32,9 @@ export default function Root() {
           <nav>
             <ul>
             <li>
+              <Link to={`ViewCounterRedux`}>View Counter Redux</Link>
+            </li>
+            <li>
               <Link to={`ViewPrimary/1`}>View With Param id=1</Link>
             </li>
             <li>
