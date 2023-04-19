@@ -1,0 +1,1 @@
+All pages of applications, with their components into specific folder, componentes shared into multiple pages are features

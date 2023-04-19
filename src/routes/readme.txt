@@ -1,0 +1,1 @@
+All routes of the app that points to the pages

@@ -8,39 +8,15 @@ import "./Index.scss";
 import Root from "./routes/Root";
 import ErrorPage from "./ErrorPage";
 
-import AsyncComponent from "./components/AsyncComponent";
-import ViewPrimary from "./routes/ViewPrimary";
-import ViewCounterRedux from "./routes/ViewCounterRedux";
+import AsyncComponent from "./components/Async/AsyncComponent";
+import ViewPrimary from "./pages/Primary/Index";
+import ViewCounterRedux from "./pages/CounterRedux/Index";
 import {  Provider } from "react-redux";
-import store from "./redux/store";
+import store from "./redux/Store";
+import router from "./routes/Routes";
 
 
-const lazy = () => import(/* webpackChunkName: "lazy" */ './routes/ViewLazy');
 
-
-const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root />,
-      errorElement: <ErrorPage />,
-      children: [
-        {
-          path: "ViewPrimary/:Id",
-          element: <ViewPrimary />,
-        },
-        {
-          path: "ViewCounterRedux",
-          element: <ViewCounterRedux />,
-        },
-        {
-            path: "Lazy/:Id",
-            element: <AsyncComponent moduleProvider={lazy} />,
-          },
-      ],
-    },
-  ]);
-
-  
 
 
 const component : any = document.getElementById("root")

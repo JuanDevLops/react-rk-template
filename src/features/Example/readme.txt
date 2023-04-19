@@ -1,0 +1,1 @@
+Features are package of components that will be use into multiple pages

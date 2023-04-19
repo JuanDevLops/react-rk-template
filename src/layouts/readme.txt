@@ -1,0 +1,1 @@
+All layouts of the pages, like main layout, header, footer, lateral menus

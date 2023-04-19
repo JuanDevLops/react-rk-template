@@ -1,0 +1,1 @@
+All constants variables, or jsons that configure the react application

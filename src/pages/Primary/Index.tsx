@@ -1,5 +1,6 @@
 import { Form ,useParams,useSearchParams} from "react-router-dom";
 import React from "react";
+import MainLayout from "../../layouts/MainLayout";
 
 export default function ViewPrimary() {
     const { Id  } = useParams();
@@ -7,9 +8,11 @@ export default function ViewPrimary() {
     const test = searchParams.get("test");
     
   return (
+    <MainLayout>
     <div>
       {Id}{test}
     </div>
+    </MainLayout>
   );
 
 

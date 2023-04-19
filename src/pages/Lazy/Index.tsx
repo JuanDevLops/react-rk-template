@@ -1,5 +1,6 @@
 import { Form ,useParams,useSearchParams} from "react-router-dom";
 import React from "react";
+import MainLayout from "../../layouts/MainLayout";
 
 
 export const ComponentLazy = function ViewLazy() {
@@ -8,9 +9,11 @@ export const ComponentLazy = function ViewLazy() {
   const test = searchParams.get("test");
   
 return (
-  <div>
+  <MainLayout>
+ <div>
     {Id}{test}
   </div>
+  </MainLayout> 
 );
 }
 

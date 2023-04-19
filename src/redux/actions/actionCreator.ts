@@ -1,4 +1,4 @@
-import { INCREASE, DECREASE } from "./actionTypes";
+import { INCREASE, DECREASE } from "./ActionTypes";
 
 // Action Creator
 export function IncreaseChange() {

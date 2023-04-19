@@ -3,12 +3,14 @@ import React from "react";
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { DecreaseAsyncChange, DecreaseChange, IncreaseChange, IncreaseMultiChange } from "../redux/actions/actionCreator";
+import { DecreaseAsyncChange, DecreaseChange, IncreaseChange, IncreaseMultiChange } from "../../redux/Actions/actionCreator";
+import MainLayout from "../../layouts/MainLayout";
 
 const ViewCounterRedux =  (props : any) => {
    
 
   return (
+    <MainLayout>
     <div>
     <h1>{props.value}</h1>
     <button onClick={() => {
@@ -19,6 +21,8 @@ const ViewCounterRedux =  (props : any) => {
     <button onClick={() => {props.IncreaseMultiChange()}}>Increase Multi Change</button>
     <button onClick={() => {props.DecreaseAsyncChange()}}>Decrease Async Change</button>
     </div>
+     </MainLayout> 
+   
   );
 
 
