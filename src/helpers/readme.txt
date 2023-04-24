@@ -1,1 +1,1 @@
-The essential functions util for the react app 
+The essential functions util for the react app, the perfect place to get the functions for unit tests

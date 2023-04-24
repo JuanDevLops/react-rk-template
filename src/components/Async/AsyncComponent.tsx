@@ -27,9 +27,9 @@ let props: any = this.props;
 
     //The magic happens here!
     return (
-      <div>
+      <>
         {ComponentLazy ? <ComponentLazy /> : <div>Carregando</div>}
-      </div>
+      </>
     );
   }
 };

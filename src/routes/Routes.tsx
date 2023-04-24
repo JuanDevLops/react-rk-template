@@ -5,6 +5,7 @@ import ViewCounterRedux from "../pages/CounterRedux/Index";
 import AsyncComponent from "../components/Async/AsyncComponent";
 import React from "react";
 import App from "../app/App";
+import MainLayout from "../layouts/MainLayout";
 
 const lazy = () => import(/* webpackChunkName: "lazy" */ '../pages/Lazy/Index');
   
@@ -26,6 +27,10 @@ const lazy = () => import(/* webpackChunkName: "lazy" */ '../pages/Lazy/Index');
         {
             path: "Lazy/:Id",
             element: <AsyncComponent moduleProvider={lazy} />,
+          },
+          {
+            path: "/",
+            element: <MainLayout/>,
           },
       ],
     },

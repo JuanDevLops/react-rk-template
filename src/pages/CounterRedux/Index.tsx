@@ -3,7 +3,7 @@ import React from "react";
 
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { DecreaseAsyncChange, DecreaseChange, IncreaseChange, IncreaseMultiChange } from "../../redux/Actions/actionCreator";
+import { DecreaseAsyncChange, DecreaseChange, IncreaseChange, IncreaseMultiChange } from "../../redux/Actions/ActionCreator";
 import MainLayout from "../../layouts/MainLayout";
 
 const ViewCounterRedux =  (props : any) => {

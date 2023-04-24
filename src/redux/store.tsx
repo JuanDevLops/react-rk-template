@@ -1,7 +1,7 @@
 import {  combineReducers } from "redux";
 import { configureStore } from '@reduxjs/toolkit'
 
-import numerosReducer from "./reducers/numeros";
+import numerosReducer from "./Reducers/Numeros";
 
 import { applyMiddleware } from 'redux'
 import promise from 'redux-promise'

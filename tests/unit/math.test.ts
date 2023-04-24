@@ -1,4 +1,4 @@
-import math from "./math";
+import math from "../../src/helpers/math";
 
 const { sum }: any = math();
 
